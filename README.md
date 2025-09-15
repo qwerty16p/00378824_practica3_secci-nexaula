@@ -1,2 +1,17 @@
-# 00378824_practica3_secci-nexaula
-Laboratorio 3 de PW
+1. ¿Por qué aprender CSS avanzado?
+   Aprender CSS en un nivel avanzado es importante por varias razones que influyen directamente en la calidad y el aspecto profesional de una página web. Mejora la experiencia del usuario al permitir interfaces más atractivas y funcionales mediante el uso de animaciones, transiciones y estructuras complejas. Facilita la adaptación del diseño a diferentes dispositivos, asegurando que el sitio se vea bien en cualquier pantalla. Ofrece mayor control sobre los estilos, permitiendo aplicar detalles con precisión y consistencia. Además, estas habilidades son muy valoradas en el mercado laboral actual, ya que permiten construir sitios modernos y eficientes. Finalmente, herramientas como Flexbox, Grid y las variables en CSS hacen que el código sea más limpio, fácil de mantener y rápido de escribir.
+
+2. ¿Por qué cambia el posicionamiento de las cajas internas al div principal?
+   El cambio ocurre porque la propiedad flex-direction define la orientación del eje principal en un contenedor con display flex. Por defecto, este eje es horizontal (flex-direction: row), lo que hace que los elementos se alineen uno al lado del otro. Si se cambia a flex-direction: column, el eje se vuelve vertical y los elementos se posicionan uno debajo del otro, ya que siempre siguen la dirección del eje principal.
+
+3. ¿Se puede lograr un cambio en el orden de los elementos sin tocar los archivos HTML, solo a través de CSS?
+   Sí, es posible. Esto es una ventaja importante de usar Flexbox o Grid. Con Flexbox se puede aplicar la propiedad order a los elementos hijos para cambiar su orden visual sin modificar el HTML. Todos los elementos tienen por defecto order: 0, y al asignarles diferentes valores, positivos o negativos, se puede controlar su posición en pantalla. Con Grid, esto es aún más flexible gracias a la propiedad grid-template-areas, que permite definir un esquema visual sin que el orden en el HTML importe, ya que cada elemento se asigna a una zona específica dentro del layout.
+
+4. ¿Qué hacen las propiedades width en el ejemplo de Flexbox?
+   En el ejemplo, las propiedades width funcionan junto con flex-wrap: wrap para crear un diseño adaptable. A cada div hijo se le asigna width: 33%, intentando que cada uno ocupe un tercio del contenedor. Al primer hijo se le aplica width: 64%, reemplazando la regla anterior, y haciendo que ocupe casi dos tercios del espacio. Como resultado, el primer y segundo elemento suman un 97% del ancho, por lo que entran en la primera fila. El tercer elemento, con 33%, no cabe, y debido al uso de flex-wrap: wrap, se mueve automáticamente a la siguiente línea.
+
+5. ¿Puedo diseñar toda mi web usando GRID?
+   Sí, es totalmente posible. CSS Grid fue creado específicamente para diseñar la estructura principal de una página web. Es ideal para trabajar en dos dimensiones, permitiendo controlar tanto filas como columnas, lo que facilita la creación de layouts completos que incluyen cabeceras, pies de página, barras laterales y contenido central. Aunque Flexbox es útil para distribuir elementos en una sola dirección, Grid ofrece un control total sobre la disposición del contenido en toda la página.
+
+6. ¿Por qué se dan estos cambios de layout con tan pocas líneas de diseño CSS usando Grid?
+   Esto se debe a que CSS Grid tiene un enfoque declarativo. En lugar de dar instrucciones detalladas sobre la posición de cada elemento, simplemente se indica cómo debe verse el resultado final. Por ejemplo, con grid-template-areas se puede definir un esquema visual del diseño utilizando texto que representa las distintas secciones. El motor de CSS se encarga de ubicar los elementos según ese esquema, lo que simplifica el código, lo hace más claro y reduce significativamente la cantidad de líneas necesarias.
